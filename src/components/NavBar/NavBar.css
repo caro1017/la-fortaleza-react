@@ -1,0 +1,111 @@
+.nav-container {
+    background-color: var(--mainColor);
+    box-shadow: none;
+
+    @media screen and (max-width: 500px) {
+        height: 5rem;
+    }
+}
+
+.nav-logo-container {
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    z-index: 2;
+    left: 42rem;
+    top: 1rem;
+    background-color: var(--mainColor);
+
+    @media screen and (max-width: 769px) {
+        left: 20rem;
+        top: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        left: 10rem;
+        width: 6.5rem;
+        height: 6.5rem;
+        top: 0.5rem;
+    }
+}
+
+.nav-logo {
+    position: absolute;
+    z-index: 100;
+    width: 7rem;
+    left: 0.3rem;
+    top: 0.3rem;
+
+    @media screen and (max-width: 500px) {
+        width: 6rem;
+        left: 0.3rem;
+    }
+
+}
+
+
+.nav-container-desktop,
+ul {
+    display: flex;
+
+    @media screen and (max-width: 769px) {
+        display: none;
+    }
+}
+
+.nav-container-desktop li {
+    margin-left: 8rem;
+    text-transform: uppercase;
+    color: var(--contrastColorMain);
+
+    font-weight: 500;
+    text-transform: uppercase;
+
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+.nav-container-desktop li::after {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: var(--contrastColorMain);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+.nav-container-desktop li:hover::after {
+    transform: scale(1);
+}
+
+.nav-left {
+    margin-left: 6rem;
+}
+
+.nav-right {
+    margin-left: 9rem;
+}
+
+.nav-container-movil {
+    height: 100%;
+    background-color: var(--mainColor);
+}
+
+.nav-container-movil ul {
+    display: block;
+    text-transform: uppercase;
+}
+
+.nav-container-movil li {
+    padding: 0.5rem;
+    color: var(--contrastColorMain);
+}
+
