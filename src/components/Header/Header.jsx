@@ -6,9 +6,14 @@ import "./header.css";
 const Header = ({ src, title }) => {
   return (
     <div className="container-header">
-      <img src={src} alt="imgHeader" className="styleImg" />
+      <img rel="preload" src={src} alt="imgHeader" className="styleImg" />
       <h1 className="styleTitle">{title}</h1>
-      <Fab color="success" size="small" className="icon-header">
+      <Fab
+        color="success"
+        size="small"
+        className="icon-header"
+        position="fixed"
+      >
         <WhatsAppIcon />
       </Fab>
     </div>

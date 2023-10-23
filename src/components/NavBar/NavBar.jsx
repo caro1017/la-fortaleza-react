@@ -69,6 +69,7 @@ const NavBar = () => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
+        
         <AppBar position="fixed" elevation={0}>
           <Toolbar className="nav-container">
             <Hidden mdUp={!isMobileOrTablet}>

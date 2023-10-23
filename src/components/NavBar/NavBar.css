@@ -55,11 +55,12 @@ ul {
 }
 
 .nav-container-desktop li {
+    letter-spacing: 1px;
     margin-left: 8rem;
     text-transform: uppercase;
-    color: var(--contrastColorMain);
+    color: var(--contrastColorSecondary);
 
-    font-weight: 500;
+    font-weight: 300;
     text-transform: uppercase;
 
     width: max-content;
@@ -73,10 +74,10 @@ ul {
     content: "";
     position: absolute;
     bottom: -0.4rem;
-    height: 2px;
+    height: 1px;
     width: 100%;
     left: 0;
-    background-color: var(--contrastColorMain);
+    background-color: var(--contrastColorSecondary);
     transition: 0.3s;
     transition-timing-function: ease-in-out;
     transform: scale(0);
@@ -91,7 +92,7 @@ ul {
 }
 
 .nav-right {
-    margin-left: 9rem;
+    margin-left: 6rem;
 }
 
 .nav-container-movil {
@@ -106,6 +107,7 @@ ul {
 
 .nav-container-movil li {
     padding: 0.5rem;
-    color: var(--contrastColorMain);
+    letter-spacing: 0.5px;
+    color: var(--contrastColorSecondary);
 }
 

@@ -1,0 +1,5 @@
+.text-styled-home {
+    color: var(--contrastColorMain);
+    text-align: center;
+    padding: 1rem;
+}
