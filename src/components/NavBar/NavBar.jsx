@@ -8,7 +8,7 @@ import BookingPage from "../../pages/BookingPage/BookingPage";
 import ServicesPage from "../../pages/ServicesPage/ServicesPage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 
-import { Images } from "../../images/Images";
+import Images from "../../images/Images";
 import {
   AppBar,
   Box,
@@ -69,7 +69,6 @@ const NavBar = () => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
-        
         <AppBar position="fixed" elevation={0}>
           <Toolbar className="nav-container">
             <Hidden mdUp={!isMobileOrTablet}>
