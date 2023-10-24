@@ -2,13 +2,13 @@ import "./NavBar.css";
 import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 
-import HomePage from "../../Page/HomePage/HomePage";
-import AboutUsPage from "../../Page/AboutUsPage/AboutUsPage";
-import BookingPage from "../../Page/BookingPage/BookingPage";
-import ServicesPage from "../../Page/ServicesPage/ServicesPage";
-import ContactPage from "../../Page/ContactPage/ContactPage";
+import HomePage from "../../pages/HomePage/HomePage";
+import AboutUsPage from "../../pages/AboutUsPage/AboutUsPage";
+import BookingPage from "../../pages/BookingPage/BookingPage";
+import ServicesPage from "../../pages/ServicesPage/ServicesPage";
+import ContactPage from "../../pages/ContactPage/ContactPage";
 
-import { Images } from "../../Images/Images";
+import { Images } from "../../images/Images";
 import {
   AppBar,
   Box,

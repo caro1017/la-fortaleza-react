@@ -1,0 +1,118 @@
+/* Estilos card izquierda */
+
+.container-info-card {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+
+    @media screen and (max-width: 500px) {
+        display: block;
+        padding: 0;
+    }
+}
+
+.card-img {
+    width: 26rem;
+    height: 18rem;
+
+    @media screen and (max-width: 768px) {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 15rem;
+        height: 11rem;
+        margin: 2rem 4rem 0;
+    }
+}
+
+.container-info-text-card {
+    width: 25rem;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+        width: 20rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 0 3rem;
+    }
+}
+
+
+.circle-icon-card-left {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 7.5rem -1.8rem;
+    background-color: var(--mainColor);
+
+    @media screen and (max-width: 768px) {
+        margin: 6rem -2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 5.5rem -5.8rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.icon-card-left {
+    position: absolute;
+    margin: -10.2rem 25rem;
+
+    @media screen and (max-width: 768px) {
+        margin: -8.8rem 19rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: -7.4rem 18rem;
+    }
+}
+
+.circle-icon-card-right {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 7.5rem -28rem;
+    background-color: var(--mainColor);
+
+    @media screen and (max-width: 768px) {
+        margin: 6rem -21.5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 5.5rem -20.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.icon-card-right {
+    position: absolute;
+    margin: -10.2rem -1rem;
+
+    @media screen and (max-width: 768px) {
+        margin: -8.8rem -1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: -7.4rem 3rem;
+    }
+}
+
+.container-img-card img {
+    width: 7rem;
+    padding: 0.5rem;
+
+    @media screen and (max-width: 768px) {
+        width: 5rem;
+    }
+
+}
+
+

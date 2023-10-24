@@ -1,0 +1,31 @@
+.container-carrusel {
+    width: 80%;
+    padding: 0 10rem;
+  
+
+    @media screen and (max-width: 768px) {
+        width: 95%;
+        padding: 0 1rem;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 0 0.5rem;
+    }
+
+}
+
+.container-carrusel img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--contrastColorMain);
+}
+
+.swiper-pagination {
+    position: relative;
+    padding: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var( --contrastColorSecondary);
+}

@@ -1,7 +1,7 @@
 import "./title.css";
 
 // eslint-disable-next-line react/prop-types
-const Title = ({ color, title }) => {
+const Title = ({ color, title, linePosition }) => {
   const titleStyle = {
     color: color,
   };
@@ -13,11 +13,17 @@ const Title = ({ color, title }) => {
   return (
     <>
       <div className="container-title">
-        <span className="linea-horizontal" style={spanStyle}></span>
+        {linePosition === "left" ||
+          (linePosition === "both" && (
+            <span className="linea-horizontal" style={spanStyle}></span> // Línea izquierda
+          ))}
         <h2 className="title-styled" style={titleStyle}>
           {title}
         </h2>
-        <span className="linea-horizontal" style={spanStyle}></span>
+        {linePosition === "right" ||
+          (linePosition === "both" && (
+            <span className="linea-horizontal" style={spanStyle}></span> // Línea derecha
+          ))}
       </div>
     </>
   );
