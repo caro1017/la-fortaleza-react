@@ -11,10 +11,11 @@ const SeparatorSection = ({ src }) => {
         alt="imagen_separator_finca"
         className="container-separator"
       />
-      <span className="container-icon-separator"></span>
-      <div className="icon-separator">
-        <FlotingButton icon={<WhatsAppIcon />} />
-      </div>
+      <span className="container-icon-separator">
+        <div className="icon-separator">
+          <FlotingButton icon={<WhatsAppIcon />} />
+        </div>
+      </span>
     </>
   );
 };

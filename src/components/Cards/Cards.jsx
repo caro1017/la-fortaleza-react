@@ -5,7 +5,6 @@ import Text from "../Text/Text";
 import "./Cards.css";
 import Title from "../Title/Title";
 
-
 const Cards = ({
   cardPosition,
   src,
@@ -29,13 +28,14 @@ const Cards = ({
             <div className="container-info-card">
               <div className="card-left">
                 <img src={src} alt="Imagen naturaleza" className="card-img" />
-                <span className="circle-icon-card-left"></span>
-                <div className="icon-card-left">
-                  <FlotingButton
-                    icon={<AddIcon />}
-                    className="styled-icon-card-left"
-                  />
-                </div>
+                <span className="circle-icon-card-left">
+                  <div className="icon-card-left">
+                    <FlotingButton
+                      icon={<AddIcon />}
+                      className="styled-icon-card-left"
+                    />
+                  </div>
+                </span>
               </div>
 
               <div className="container-info-text-card">
@@ -60,7 +60,7 @@ const Cards = ({
                   linePosition={linePosition}
                 />
                 <Text text={text} color={color} />
-                
+
                 <div className="container-img-card">
                   <img src={srcImg1} alt="Imagen comida campo" />
                   <img src={srcImg2} alt="Imagen comida campo" />
@@ -70,13 +70,14 @@ const Cards = ({
 
               <div className="card-right">
                 <img src={src} alt="Imagen naturaleza" className="card-img" />
-                <span className="circle-icon-card-right"></span>
-                <div className="icon-card-right">
-                  <FlotingButton
-                    icon={<AddIcon />}
-                    className="styled-icon-card-right"
-                  />
-                </div>
+                <span className="circle-icon-card-right">
+                  <div className="icon-card-right">
+                    <FlotingButton
+                      icon={<AddIcon />}
+                      className="styled-icon-card-right"
+                    />
+                  </div>
+                </span>
               </div>
             </div>
           </>

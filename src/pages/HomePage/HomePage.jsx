@@ -50,9 +50,6 @@ const HomePage = () => {
           srcImg3={Images.homeComida_3}
         />
       </main>
-      <footer>
-        <h1> Footer </h1>
-      </footer>
     </>
   );
 };

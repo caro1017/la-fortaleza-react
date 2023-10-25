@@ -1,0 +1,157 @@
+.container-footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    padding: 2rem;
+
+    @media screen and (max-width: 500px) {
+        padding: 1rem;
+    }
+}
+
+.container-footer img {
+    width: 7rem;
+
+    @media screen and (max-width: 500px) {
+        width: 5rem;
+        margin-left: 1rem;
+    }
+}
+
+.container-footer h2 {
+    text-transform: uppercase;
+    color: var(--contrastColorMain);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.8rem;
+    }
+}
+
+.line-horizontal-footer {
+    display: block;
+    border-top: 2px solid var(--contrastColorSecondary);
+    margin-left: 1rem;
+    width: 5rem;
+
+    @media screen and (max-width: 500px) {
+        width: 4rem;
+    }
+}
+
+.container-footer p {
+    color: var(--contrastColorMain);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.8rem;
+    }
+}
+
+.line-vertical-footer {
+    position: relative;
+    width: 2px;
+    height: 15rem;
+    background-color: var(--contrastColorMain);
+    margin: 0 2rem 0 5rem;
+
+    @media screen and (max-width: 500px) {
+        width: 1px;
+        height: 11rem;
+        margin: 1rem 2rem;
+    }
+}
+
+.line-vertical-footer span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container-menu-footer ul {
+    display: inline-block;
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
+}
+
+
+.container-menu-footer li {
+    letter-spacing: 1px;
+    margin: 0.8rem;
+    text-transform: uppercase;
+    color: var(--contrastColorSecondary);
+
+    font-weight: 300;
+    text-transform: uppercase;
+
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.8rem;
+    }
+
+}
+
+.container-menu-footer li::after {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: var(--contrastColorMain);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+.container-menu-footer li:hover::after {
+    transform: scale(1);
+}
+
+
+.container-menu-footer li:hover {
+    color: var(--contrastColorMain);
+}
+
+.container-social-media {
+    background-color: var(--contrastColorMain);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-media-footer a{
+    margin: 1rem;
+    color: var(--mainColor);
+
+    @media screen and (max-width: 500px) {
+        margin: 0.6rem;
+    }
+}
+
+.social-media-footer a:hover{
+    color: var(--contrastColorSecondary);
+}
+
+.autor-footer a{
+    color: var(--mainColor);
+}
+
+.autor-footer a span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0.5rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 20px;
+    }
+}
