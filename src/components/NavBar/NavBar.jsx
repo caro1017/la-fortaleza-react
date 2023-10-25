@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { Images } from "../../images/Images";
 import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 
@@ -8,7 +9,6 @@ import BookingPage from "../../pages/BookingPage/BookingPage";
 import ServicesPage from "../../pages/ServicesPage/ServicesPage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 
-import Images from "../../images/Images";
 import {
   AppBar,
   Box,
