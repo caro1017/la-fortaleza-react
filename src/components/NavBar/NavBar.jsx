@@ -1,6 +1,8 @@
 import "./NavBar.css";
 import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
+import { Images } from "../../Images/Images";
+
 
 import HomePage from "../../pages/HomePage/HomePage";
 import AboutUsPage from "../../pages/AboutUsPage/AboutUsPage";
@@ -18,7 +20,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Images } from "../../images/Images";
+
 
 const NavBar = () => {
   const [state, setState] = useState({ right: false });

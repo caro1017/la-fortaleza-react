@@ -1,11 +1,11 @@
-import { Images } from "../../images/Images";
+import { Images } from "../../Images/Images";
 import HeaderSection from "../../section/HeaderSection/HeaderSection";
 import Title from "../../components/Title/Title";
 
 const AboutUsPage = () => {
   return (
     <>
-      <HeaderSection  src={Images.aboutUsImgHeader} title="Nosotros" />
+      <HeaderSection src={Images.aboutUsImgHeader} title="Nosotros" />
       <Title color="#FF5D02" title="Nosotros" linePosition="both" />
     </>
   );

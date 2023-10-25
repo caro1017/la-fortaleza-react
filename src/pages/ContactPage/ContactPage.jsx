@@ -1,4 +1,4 @@
-import { Images } from "../../images/Images";
+import { Images } from "../../Images/Images";
 import HeaderSection from "../../section/HeaderSection/HeaderSection";
 import Title from "../../components/Title/Title";
 
