@@ -1,4 +1,4 @@
-import { Images } from "../../images/Images";
+import { Images } from "../../Images/Images";
 
 // import Swiper core and required modules
 import { Autoplay, Pagination } from "swiper/modules";

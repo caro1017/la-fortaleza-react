@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Images } from "../../images/Images";
+import { Images } from "../../Images/Images";
 
 import Buttons from "../../components/Buttons/Buttons";
 import FlotingButton from "../../components/FlotingButton/FlotingButton";

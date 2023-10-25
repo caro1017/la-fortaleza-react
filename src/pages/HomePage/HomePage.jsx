@@ -1,4 +1,4 @@
-import { Images } from "../../images/Images";
+import { Images } from "../../Images/Images";
 
 import "./HomePage.css";
 
