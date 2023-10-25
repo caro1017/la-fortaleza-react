@@ -9,7 +9,6 @@ import CarrouselSection from "../../section/CarrouselSection/CarrouselSection";
 import SeparatorSection from "../../section/SeparatorSection/SeparatorSection";
 import VideoSection from "../../section/VideoSection/VideoSection";
 import Cards from "../../components/Cards/Cards";
-import Footer from "../../components/Footer/Footer";
 
 const HomePage = () => {
   const colorGreen = "#057F2A";
@@ -52,7 +51,7 @@ const HomePage = () => {
         />
       </main>
       <footer>
-        <Footer />
+        <h1> Footer </h1>
       </footer>
     </>
   );
