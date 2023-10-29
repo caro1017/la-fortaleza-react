@@ -13,7 +13,10 @@ const SeparatorSection = ({ src }) => {
       />
       <span className="container-icon-separator">
         <div className="icon-separator">
-          <FlotingButton icon={<WhatsAppIcon />} />
+          <FlotingButton
+            icon={<WhatsAppIcon />}
+            href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!"
+          />
         </div>
       </span>
     </>

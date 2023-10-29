@@ -1,0 +1,89 @@
+.container-tabContent {
+    display: flex;
+    margin-left: 5rem;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        padding: 0;
+    }
+
+}
+
+.title-tabsContent p {
+    padding: 0 10rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--contrastColorMain);
+
+    @media screen and (max-width: 768px) {
+        padding: 0 5rem;        
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+        font-size: 1rem;        
+    }
+}
+
+.title-tabsContent span {
+    display: block;
+    border-top: 2px solid var(--contrastColorSecondary);
+    margin-left: 10rem;
+    width: 5rem;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 5rem;       
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: 0;       
+    }
+}
+
+.info-tabsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    @media screen and (max-width: 500px) {
+        margin-left: 2rem;       
+    }
+}
+
+.info-tabsContent p {
+    color: var(--contrastColorMain);
+    font-weight: 300;
+
+    @media screen and (max-width: 500px) {
+       font-size: 14px;      
+    }
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    color: var(--contrastColorMain);
+}
+
+.icon {
+    margin-right: 10px;
+    color: var(--contrastColorSecondary);
+    opacity: 0.7;
+}
+
+.enter-from-left {
+    animation: enterFromLeft 0.5s ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes enterFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

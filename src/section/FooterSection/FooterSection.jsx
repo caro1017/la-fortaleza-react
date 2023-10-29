@@ -63,7 +63,7 @@ const FooterSection = () => {
         <div className="autor-footer">
           <Link to="https://github.com/caro1017">
             <p>
-              Copyright © 2022 by <span>Carolina Uribe Botero</span>
+              Rediseño Copyright © 2023 by <span>Carolina Uribe Botero</span>
             </p>
           </Link>
         </div>

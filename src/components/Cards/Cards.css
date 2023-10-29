@@ -30,13 +30,14 @@
 .container-info-text-card {
     width: 25rem;
     text-align: left;
+    font-weight: 300;
 
     @media screen and (max-width: 768px) {
         width: 20rem;
     }
 
     @media screen and (max-width: 500px) {
-        margin: 0 3rem;
+        margin: 2rem 3rem;
     }
 }
 

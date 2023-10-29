@@ -32,12 +32,13 @@ const HomePage = () => {
         />
         <CarrouselSection />
         <SeparatorSection src={Images.separatorHome} />
-        <VideoSection textButtonVideo="Servicios" />
+        <VideoSection textButtonVideo="Servicios" href="/Servicios"/>
         <Cards
           text="“Atención de alta calidad, con conocimiento del tema guiandote en una gran experiencia”"
           color={colorGreen}
           cardPosition="left"
           src={Images.cardHome_1}
+          href="/Servicios"
         />
         <SeparatorSection src={Images.separatorHome} />
         <Cards
@@ -48,6 +49,7 @@ const HomePage = () => {
           srcImg1={Images.homeComida_1}
           srcImg2={Images.homeComida_2}
           srcImg3={Images.homeComida_3}
+          href="/Servicios"
         />
       </main>
     </>

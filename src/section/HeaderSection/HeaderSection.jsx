@@ -11,7 +11,10 @@ const HeaderSection = ({ src, title }) => {
         <img rel="preload" src={src} alt="imgHeader" className="styleImg" />
         <h1 className="styleTitle">{title}</h1>
         <div className="icon-header">
-          <FlotingButton icon={<WhatsAppIcon />} />
+          <FlotingButton
+            icon={<WhatsAppIcon />}
+            href="https://api.whatsapp.com/send?phone=573124026944&text=Hola, Nececito mas informacion!"
+          />
         </div>
       </div>
     </>

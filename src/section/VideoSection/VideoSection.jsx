@@ -9,7 +9,7 @@ import Text from "../../components/Text/Text";
 import "./VideoSection.css";
 
 // eslint-disable-next-line react/prop-types
-const VideoSection = ({ textButtonVideo }) => {
+const VideoSection = ({ textButtonVideo, href }) => {
   const [isVideoPlaying, setVideoPlaying] = useState(false);
 
   const toggleVideoPlayback = () => {
@@ -35,7 +35,7 @@ const VideoSection = ({ textButtonVideo }) => {
             textAlign="center"
           />
           <div className="container-btn-header">
-            <Buttons text={textButtonVideo} />
+            <Buttons text={textButtonVideo} href={href} />
           </div>
         </div>
 

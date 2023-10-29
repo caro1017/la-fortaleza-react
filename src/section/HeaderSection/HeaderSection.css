@@ -21,14 +21,14 @@
     text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
-        top: 30%;
-        font-size: 150px;
+        top: 20%;
+        font-size: 120px;
     }
 
     @media screen and (max-width: 500px) {
-        top: 9rem;
-        left: 11.6rem;
-        font-size: 45px;
+        top: 8rem;
+        left: 13rem;
+        font-size: 70px;
         font-weight: 600;
     }
 }

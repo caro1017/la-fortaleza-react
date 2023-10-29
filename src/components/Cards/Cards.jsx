@@ -15,6 +15,7 @@ const Cards = ({
   srcImg1,
   srcImg2,
   srcImg3,
+  href,
 }) => {
   return (
     <>
@@ -33,6 +34,7 @@ const Cards = ({
                     <FlotingButton
                       icon={<AddIcon />}
                       className="styled-icon-card-left"
+                      href={href}
                     />
                   </div>
                 </span>
@@ -46,6 +48,14 @@ const Cards = ({
                 />
                 <Text text={text} color={color} />
               </div>
+              {/* Conditionally render the container-img-card */}
+              {srcImg1 || srcImg2 || srcImg3 ? (
+                <div className="container-img-card">
+                  {srcImg1 && <img src={srcImg1} alt="Imagen comida campo" />}
+                  {srcImg2 && <img src={srcImg2} alt="Imagen comida campo" />}
+                  {srcImg3 && <img src={srcImg3} alt="Imagen comida campo" />}
+                </div>
+              ) : null}
             </div>
           </>
         )}
@@ -60,12 +70,14 @@ const Cards = ({
                   linePosition={linePosition}
                 />
                 <Text text={text} color={color} />
-
-                <div className="container-img-card">
-                  <img src={srcImg1} alt="Imagen comida campo" />
-                  <img src={srcImg2} alt="Imagen comida campo" />
-                  <img src={srcImg3} alt="Imagen comida campo" />
-                </div>
+                {/* Conditionally render the container-img-card */}
+                {srcImg1 || srcImg2 || srcImg3 ? (
+                  <div className="container-img-card">
+                    {srcImg1 && <img src={srcImg1} alt="Imagen comida campo" />}
+                    {srcImg2 && <img src={srcImg2} alt="Imagen comida campo" />}
+                    {srcImg3 && <img src={srcImg3} alt="Imagen comida campo" />}
+                  </div>
+                ) : null}
               </div>
 
               <div className="card-right">
@@ -75,6 +87,7 @@ const Cards = ({
                     <FlotingButton
                       icon={<AddIcon />}
                       className="styled-icon-card-right"
+                      href={href}
                     />
                   </div>
                 </span>
