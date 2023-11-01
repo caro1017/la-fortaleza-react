@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-const Buttons = ({ text, href }) => {
+const Buttons = ({ text, href, onClick }) => {
   const styledButtons = {
     width: "8rem",
     fontWeight: 400,
@@ -11,7 +11,12 @@ const Buttons = ({ text, href }) => {
   return (
     <>
       <Link to={href}>
-        <Button variant="contained" style={styledButtons} color="success">
+        <Button
+          variant="contained"
+          style={styledButtons}
+          color="success"
+          onClick={onClick}
+        >
           {text}
         </Button>
       </Link>

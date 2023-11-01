@@ -1,0 +1,46 @@
+.container-booking-section {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    @media screen and (max-width: 500px) {
+        display: block;
+    }
+}
+
+
+.container-gallery-section {
+    width: 30rem;
+    margin: 0 5rem;
+
+    @media screen and (max-width: 768px) {
+        width: 30rem;
+        margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 24.5rem;
+        margin: 0 0;
+    }
+}
+
+.container-gallery-section div {
+    margin-bottom: 0.2rem;
+}
+
+.container-registro-form {
+    background-color: var(--secondaryColor);
+    height: 30rem;
+
+    @media screen and (max-width: 768px) {
+        height: 28rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 30rem;
+    }
+}
+
+.contenedor-services-booking {
+    margin-top: 4rem;
+}

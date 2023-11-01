@@ -1,0 +1,8 @@
+.container-error-validate {
+    width: 15rem;
+    color: var(--contrastColorSecondary);
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin-left: 1rem;
+}

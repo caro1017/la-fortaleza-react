@@ -37,6 +37,10 @@ import Gallery_1_4 from "../../public/img/gallery/gallery_1_4.png";
 import Gallery_1_5 from "../../public/img/gallery/gallery_1_5.png";
 import Gallery_1_6 from "../../public/img/gallery/gallery_1_6.png";
 import Gallery_1_7 from "../../public/img/gallery/gallery_1_7.png";
+// Imagenes Galleria Reservas
+import Gallery_2_1 from "../../public/img/gallery/gallery_2_1.png";
+import Gallery_2_2 from "../../public/img/gallery/gallery_2_2.png";
+import Gallery_2_3 from "../../public/img/gallery/gallery_2_3.png";
 
 export const Images = {
   logo: Logo,
@@ -77,4 +81,8 @@ export const Images = {
   gallery_1_5: { src: Gallery_1_5, width: 593, height: 675 },
   gallery_1_6: { src: Gallery_1_6, width: 524, height: 364 },
   gallery_1_7: { src: Gallery_1_7, width: 524, height: 294 },
+
+  gallery_2_1: { src: Gallery_2_1, width: 324, height: 284 },
+  gallery_2_2: { src: Gallery_2_2, width: 325, height: 284 },
+  gallery_2_3: { src: Gallery_2_3, width: 670, height: 373 },
 };

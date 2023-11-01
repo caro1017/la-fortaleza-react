@@ -1,0 +1,12 @@
+.container-input {
+    padding: 0.5rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+
+.btn-icon-form:hover {
+    color: var(--contrastColorSecondary);
+}

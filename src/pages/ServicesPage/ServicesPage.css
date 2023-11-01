@@ -9,10 +9,9 @@
     }
 
     @media screen and (max-width: 500px) {
-        width: 25rem;
+        width: 24rem;
     }
 }
-
 
 .react-photo-album--photo:hover {
     filter: opacity(0.5);

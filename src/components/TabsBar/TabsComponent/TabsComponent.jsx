@@ -3,7 +3,7 @@ import { Box, Tab, Tabs } from "@mui/material";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import HomeIcon from "@mui/icons-material/Home";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import RestaurantIcon from "@mui/icons-material/Restaurant";
+import FestivalIcon from "@mui/icons-material/Festival";
 import TabsPanel from "../TabsPanel/TabsPanel";
 import TabsContent from "../TabsContent/TabsContent";
 import "./TabsComponent.css";
@@ -39,6 +39,16 @@ const TabsComponent = () => {
                 v={value.toString()}
               />
               <Tab
+                label="Camping"
+                icon={<FestivalIcon />}
+                sx={{
+                  "&.Mui-selected": {
+                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
+                  },
+                }}
+                v={value.toString()}
+              />
+              <Tab
                 label="Estadia"
                 icon={<HomeIcon />}
                 sx={{
@@ -58,19 +68,9 @@ const TabsComponent = () => {
                 }}
                 v={value.toString()}
               />
-              <Tab
-                label="Alimentación"
-                icon={<RestaurantIcon />}
-                sx={{
-                  "&.Mui-selected": {
-                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
-                  },
-                }}
-                v={value.toString()}
-              />
             </Tabs>
           </Box>
-         
+
           <TabsPanel value={value} index={0}>
             <TabsContent
               title="Pasadia"
@@ -80,27 +80,27 @@ const TabsComponent = () => {
             />
           </TabsPanel>
           <TabsPanel value={value} index={1}>
-          <TabsContent
+            <TabsContent
+              title="Camping"
+              time="Horario 5am - 6pm"
+              people="Minimo 4 personas"
+              price="Precio $30.000"
+            />
+          </TabsPanel>
+          <TabsPanel value={value} index={2}>
+            <TabsContent
               title="Estadia"
               time="Horario 5am - 9am (24h)"
               people="Minimo 2 personas"
               price="Precio $150.000"
             />
           </TabsPanel>
-          <TabsPanel value={value} index={2}>
-          <TabsContent
+          <TabsPanel value={value} index={3}>
+            <TabsContent
               title="Eventos"
               time="Horario 8am - 3pm"
               people="Minimo 15 personas"
               price="Precio Segun tipo de evento"
-            />
-          </TabsPanel>
-          <TabsPanel value={value} index={3}>
-          <TabsContent
-              title="Alimentación"
-              time="Desayuno 8am - 9am / Almuerzo 12m - 1pm"
-              people="Minimo 15 personas"
-              price="Incluido en el valor"
             />
           </TabsPanel>
         </Box>

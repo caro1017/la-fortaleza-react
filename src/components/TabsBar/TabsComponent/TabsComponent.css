@@ -1,4 +1,12 @@
+
 .continer-tabs button {
     color: var(--contrastColorMain);
     font-weight: 400;
+    padding: 0;
+    width: 2rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 10px;
+    }
+
 }
