@@ -9,8 +9,9 @@ import TabsContent from "../TabsContent/TabsContent";
 import "./TabsComponent.css";
 
 const TabsComponent = () => {
+  // Control de estado para el valor ingresado
   const [value, setValue] = useState(0);
-
+  // Cambiar el valor por medio de la funcion ingresar nuevo valor
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -23,17 +24,18 @@ const TabsComponent = () => {
               value={value}
               onChange={handleChange}
               TabIndicatorProps={{
-                sx: { backgroundColor: "#FF5D02" }, // Set the indicator color
+                sx: { backgroundColor: "#FF5D02" },
               }}
               variant="fullWidth"
               centered
             >
+              {/* Las Tabs informacion superior titulo de las tabs */}
               <Tab
                 label="Pasadia"
                 icon={<LightModeIcon />}
                 sx={{
                   "&.Mui-selected": {
-                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
+                    color: "#FF5D02",
                   },
                 }}
                 v={value.toString()}
@@ -43,7 +45,7 @@ const TabsComponent = () => {
                 icon={<FestivalIcon />}
                 sx={{
                   "&.Mui-selected": {
-                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
+                    color: "#FF5D02",
                   },
                 }}
                 v={value.toString()}
@@ -53,7 +55,7 @@ const TabsComponent = () => {
                 icon={<HomeIcon />}
                 sx={{
                   "&.Mui-selected": {
-                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
+                    color: "#FF5D02",
                   },
                 }}
                 v={value.toString()}
@@ -63,14 +65,14 @@ const TabsComponent = () => {
                 icon={<CalendarMonthIcon />}
                 sx={{
                   "&.Mui-selected": {
-                    color: "#FF5D02", // Cambiar el color del texto de la pestaña seleccionada
+                    color: "#FF5D02",
                   },
                 }}
                 v={value.toString()}
               />
             </Tabs>
           </Box>
-
+          {/* TabsPanel contenido ingresado */}
           <TabsPanel value={value} index={0}>
             <TabsContent
               title="Pasadia"

@@ -20,13 +20,16 @@ import {
 import "./FormBooking.css";
 
 const FormBooking = () => {
+  //Control de estados para la entrada de los inputs
   const [entryDate, setentryDate] = useState("");
   const [departureDate, setdepartureDate] = useState("");
   const [amountPeople, setamountPeople] = useState("");
   const [typeService, setTypeService] = useState("");
 
   const [anchorEl, setAnchorEl] = useState(null);
+  // Control estado del Modal
   const [openModal, SetOpenModal] = useState(false);
+  // Control estado para uso del Snackbar
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const open = Boolean(anchorEl);
@@ -38,13 +41,14 @@ const FormBooking = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
+  // Funcion para abrir el menu de seleccion
   const handleMenuClick = (selectedOption) => {
     setTypeService(selectedOption);
     handleClose();
   };
 
   const handleOpenModal = () => {
+    // validacion es adecuada abrir model de lo contrario abrir Snackbar
     if (!entryDate || !departureDate || !amountPeople || !typeService) {
       setOpenSnackbar(true);
     } else {

@@ -3,7 +3,7 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PeopleIcon from "@mui/icons-material/People";
 import RequestQuoteIcon from "@mui/icons-material/RequestQuote";
 import "./TabsContent.css";
-
+// Informacion permitida para crear el contenido de cada tabs
 const TabsContent = ({ title, time, people, price }) => {
   return (
     <>

@@ -10,7 +10,7 @@ _Las herramientas con las que se construyo el proyecto son_
 
 - [Visual Studio Code](https://code.visualstudio.com/) - IDE Para la creacion del proyecto
 - [React](https://sass-lang.com/) - Framework
-- [Material UI](https://materializecss.com/getting-started.html) - Experiencia de usuario
+- [Material UI](https://mui.com/) - Experiencia de usuario
 
 ## Requerimientos 📄
 
@@ -27,7 +27,7 @@ Este proyecto cumple los siqueintes requerimientos:
 ## Despliegue 📦
 
 - [Figma](https://www.figma.com/proto/2RJn6BmS00D7JBJnthSYs5/La_Fortaleza?type=design&node-id=103-88&t=b9dqtN0Aoftr7he2-0&scaling=scale-down&page-id=103%3A2&starting-point-node-id=103%3A88) - Prototipo visual
-- [web](        ) - Pagina web
+- [web](https://la-fortaleza-react.vercel.app/) - Pagina web
 
 ## Autor ✒️
 

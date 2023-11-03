@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
+// Entradas permitidas
 const Buttons = ({ text, href, onClick, type }) => {
+  //Estilos genericos del boton
   const styledButtons = {
     width: "8rem",
     fontWeight: 400,

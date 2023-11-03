@@ -21,6 +21,7 @@ import "./FormContact.css";
 import ValidationForm from "../ValidationForm/ValidationForm";
 
 const FormContact = () => {
+  // Control de estado para los input
   const textareaInputRef = useRef(null);
 
   const [name, setName] = useState("");
@@ -28,14 +29,14 @@ const FormContact = () => {
   const [cel, setCel] = useState("");
   const [affair, setAffair] = useState("");
   const [message, setMessage] = useState("");
-
+  // Control de estado para abrir los Snackbar
   const [isSnackbarOpen, setSnackbarOpen] = useState(false);
   const [isSnackbarOpenError, setSnackbarOpenError] = useState(false);
-
+  // Funcion para darle focus al input texarea
   const handleInputFocus = () => {
     textareaInputRef.current.focus();
   };
-
+  // Enviar la informacion ingresada en el input
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -55,12 +56,12 @@ const FormContact = () => {
       setSnackbarOpenError(true);
     }
   };
-
+  // Funcion para abrir el Snackbar
   const handleSnackbarClose = () => {
     setSnackbarOpen(false);
     setSnackbarOpenError(false);
   };
-
+  // Funcion para limpiar los input
   const handleClear = () => {
     setName("");
     setEmail("");
@@ -154,7 +155,7 @@ const FormContact = () => {
           </FormControl>
         </div>
       </form>
-      
+
       <div className="container-button-form-contact">
         <Buttons text="Enviar" onClick={handleSubmit} />
         <Buttons text="Limpiar" onClick={handleClear} />

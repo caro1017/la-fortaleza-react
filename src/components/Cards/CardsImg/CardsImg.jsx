@@ -24,6 +24,7 @@ const Cards = ({
           cardPosition === "right" ? "card-right" : "card-left"
         }`}
       >
+        {/* Opcion para teenr la imagene al lado derecho */}
         {cardPosition === "left" && (
           <>
             <div className="container-info-card">
@@ -48,7 +49,7 @@ const Cards = ({
                 />
                 <Text text={text} color={color} />
               </div>
-              {/* Conditionally render the container-img-card */}
+              {/* Condicional para mostrar las imagenes si estas son solicitadas en otro componente */}
               {srcImg1 || srcImg2 || srcImg3 ? (
                 <div className="container-img-card">
                   {srcImg1 && <img src={srcImg1} alt="Imagen comida campo" />}
@@ -59,7 +60,7 @@ const Cards = ({
             </div>
           </>
         )}
-
+        {/* Opcion para teenr la imagene al lado izquierdo */}
         {cardPosition === "right" && (
           <>
             <div className="container-info-card">
@@ -70,7 +71,7 @@ const Cards = ({
                   linePosition={linePosition}
                 />
                 <Text text={text} color={color} />
-                {/* Conditionally render the container-img-card */}
+                {/* Condicional para mostrar las imagenes si estas son solicitadas en otro componente */}
                 {srcImg1 || srcImg2 || srcImg3 ? (
                   <div className="container-img-card">
                     {srcImg1 && <img src={srcImg1} alt="Imagen comida campo" />}

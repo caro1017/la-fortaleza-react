@@ -18,14 +18,16 @@ const InputsBar = ({
   value,
   onChange,
 }) => {
+  // Controlar el estado de inputRef de material ui para darle foco a los input
   const inputRef = useRef();
+  //Control de estado para controlar el color del input
   const [inputColor, setInputColor] = useState("#057F2A");
-
+  // Funcion para darle foco al input
   const handleInputFocus = () => {
     inputRef.current.focus();
     setInputColor("#FF5D02");
   };
-
+  // Funcion para cambiar el color original del input
   const handleInputBlur = () => {
     setInputColor("#057F2A");
   };
