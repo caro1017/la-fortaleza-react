@@ -1,24 +1,24 @@
 /* eslint-disable no-const-assign */
 /* eslint-disable react/prop-types */
-import { useRef, useState } from "react";
+import { useState, useRef } from "react";
 import { Box, IconButton, InputAdornment, TextField } from "@mui/material";
 import "./InputsBar.css";
 
 const InputsBar = ({
   label,
   type,
-  value,
   icon,
-  onChange,
   placeholder,
-  onClick,
   ariaControls,
   ariaExpanded,
   ariaHaspopup,
   error,
   helperText,
+  name,
+  value,
+  onChange,
 }) => {
-  const inputRef = useRef(null);
+  const inputRef = useRef();
   const [inputColor, setInputColor] = useState("#057F2A");
 
   const handleInputFocus = () => {
@@ -34,26 +34,23 @@ const InputsBar = ({
     <>
       <div className="container-input">
         <Box
-          component="form"
-          noValidate
-          autoComplete="off"
+          component="div"
           sx={{
             "& > :not(style)": {
               width: "100%",
               "& input": {
                 color: inputColor,
-                opacity: 0.5,
                 fontWeight: 400,
               },
             },
           }}
         >
           <TextField
+            name={name}
             label={label}
+            value={value}
             variant="standard"
             type={type}
-            value={value}
-            onChange={onChange}
             InputLabelProps={{
               style: {
                 letterSpacing: "1px",
@@ -65,15 +62,19 @@ const InputsBar = ({
             color="success"
             className="styled-textfield"
             placeholder={placeholder}
-            focused
             required
+            focused
             InputProps={{
+              style: {
+                color: "#FF5D02",
+                fontWeight: 300,
+              },
               endAdornment: (
                 <InputAdornment position="end">
                   <IconButton
-                    onClick={onClick}
+                    type="submit"
                     color="success"
-                    onFocus={handleInputFocus}
+                    onClick={handleInputFocus}
                     onBlur={handleInputBlur}
                     className="btn-icon-form"
                     aria-controls={ariaControls}
@@ -88,6 +89,7 @@ const InputsBar = ({
             inputRef={inputRef}
             error={error}
             helperText={error ? helperText : ""}
+            onChange={onChange}
           />
         </Box>
       </div>

@@ -22,13 +22,13 @@
 
     @media screen and (max-width: 768px) {
         top: 20%;
-        font-size: 120px;
+        font-size: 100px;
     }
 
     @media screen and (max-width: 500px) {
         top: 8rem;
         left: 13rem;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 600;
     }
 }

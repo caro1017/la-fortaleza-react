@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import FlotingButton from "../FlotingButton/FlotingButton";
+import FlotingButton from "../../FlotingButton/FlotingButton";
 import AddIcon from "@mui/icons-material/Add";
-import Text from "../Text/Text";
-import "./Cards.css";
-import Title from "../Title/Title";
+import Text from "../../Text/Text";
+import Title from "../../Title/Title";
+import "./CardsImg.css";
 
 const Cards = ({
   cardPosition,

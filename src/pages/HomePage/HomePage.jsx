@@ -8,7 +8,7 @@ import Text from "../../components/Text/Text";
 import CarrouselSection from "../../section/CarrouselSection/CarrouselSection";
 import SeparatorSection from "../../section/SeparatorSection/SeparatorSection";
 import VideoSection from "../../section/VideoSection/VideoSection";
-import Cards from "../../components/Cards/Cards";
+import CardsImg from "../../components/Cards/CardsImg/CardsImg"
 
 const HomePage = () => {
   const colorGreen = "#057F2A";
@@ -33,7 +33,7 @@ const HomePage = () => {
         <CarrouselSection />
         <SeparatorSection src={Images.separatorHome} />
         <VideoSection textButtonVideo="Servicios" href="/Servicios"/>
-        <Cards
+        <CardsImg
           text="“Atención de alta calidad, con conocimiento del tema guiandote en una gran experiencia”"
           color={colorGreen}
           cardPosition="left"
@@ -41,7 +41,7 @@ const HomePage = () => {
           href="/Servicios"
         />
         <SeparatorSection src={Images.separatorHome} />
-        <Cards
+        <CardsImg
           text="“Una experiencia única llena de nuevos retos, conociendo un poco mas de nuestra tradición ”"
           color={colorOrange}
           cardPosition="right"

@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputsBar from "../../InputsBar/InputsBar";
 import Buttons from "../../Buttons/Buttons";
 import FlotingButton from "../../FlotingButton/FlotingButton";
+import ValidationForm from "../ValidationForm/ValidationForm";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -16,7 +17,6 @@ import {
   Modal,
   Snackbar,
 } from "@mui/material";
-import ValidationForm from "../ValidationForm/ValidationForm";
 import "./FormBooking.css";
 
 const FormBooking = () => {
@@ -70,39 +70,43 @@ const FormBooking = () => {
 
   return (
     <>
-      <div className="container-form-booking">
+      <form className="container-form-booking">
         <FormControl>
           <InputsBar
             label="Fecha de Entrada"
             type="date"
+            name="date"
             value={entryDate}
             onChange={(e) => setentryDate(e.target.value)}
             icon={<CalendarMonthIcon />}
           />
-          <ValidationForm type="date" value={entryDate}/>
+          <ValidationForm type="date" value={entryDate} />
 
           <InputsBar
             label="Fecha de Salida"
             type="date"
+            name="date"
             value={departureDate}
             onChange={(e) => setdepartureDate(e.target.value)}
             icon={<CalendarMonthIcon />}
           />
-          <ValidationForm type="date" value={departureDate}/>
+          <ValidationForm type="date" value={departureDate} />
 
           <InputsBar
             label="Cantidad de Personas"
             type="number"
+            name="number"
             value={amountPeople}
             onChange={(e) => setamountPeople(e.target.value)}
             icon={<PeopleIcon />}
             placeholder="Cantidad personas"
           />
-          <ValidationForm type="number" value={amountPeople}/>
+          <ValidationForm type="number" value={amountPeople} />
 
           <FormControl variant="standard">
             <InputsBar
               label="Selecciona una opción"
+              name="option"
               icon={<KeyboardArrowDownIcon onClick={handleClick} />}
               placeholder={typeService || "Selecciona una opción"}
               value={typeService}
@@ -187,7 +191,7 @@ const FormBooking = () => {
             </Modal>
           </div>
         </FormControl>
-      </div>
+      </form>
     </>
   );
 };

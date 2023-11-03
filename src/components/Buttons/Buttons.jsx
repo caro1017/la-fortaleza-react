@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-const Buttons = ({ text, href, onClick }) => {
+const Buttons = ({ text, href, onClick, type }) => {
   const styledButtons = {
     width: "8rem",
     fontWeight: 400,
@@ -16,6 +16,7 @@ const Buttons = ({ text, href, onClick }) => {
           style={styledButtons}
           color="success"
           onClick={onClick}
+          type={type}
         >
           {text}
         </Button>

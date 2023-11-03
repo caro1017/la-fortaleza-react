@@ -20,7 +20,7 @@ const photos = [
 
 const ServicesPage = () => {
   const colorGreen = "#057F2A";
-  
+
   return (
     <>
       <header>

@@ -7,6 +7,7 @@ import FormBooking from "../../components/FormBar/FormBooking/FormBooking";
 import TabsComponent from "../../components/TabsBar/TabsComponent/TabsComponent";
 import SeparatorSection from "../../section/SeparatorSection/SeparatorSection";
 
+
 const photos = [Images.gallery_2_1, Images.gallery_2_2, Images.gallery_2_3];
 
 const BookingPage = () => {
@@ -18,6 +19,7 @@ const BookingPage = () => {
       </header>
       <main>
         <Title color={colorOrange} title="Reservas" linePosition="both" />
+
         <div className="container-booking-section">
           <div className="container-gallery-section">
             <div className="top-images">
@@ -32,6 +34,7 @@ const BookingPage = () => {
             <FormBooking />
           </div>
         </div>
+        
         <SeparatorSection src={Images.separatorHome} />
         <div className="contenedor-services-booking">
           <TabsComponent />

@@ -1,0 +1,29 @@
+.container-form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.container-icon-form-contact {
+    position: absolute;
+    margin: 1rem -3rem;
+
+    @media screen and (max-width: 500px) {
+        margin: 1rem 12.3rem;
+    }
+}
+
+.container-textarea {
+    margin-left: 5rem;
+
+    @media screen and (max-width: 500px) {
+       margin: 1rem 0.5rem;
+    }
+}
+
+.container-button-form-contact button{
+    margin-left: 2.5rem;
+
+    @media screen and (max-width: 500px) {
+        margin-left: 1rem;
+    }
+}

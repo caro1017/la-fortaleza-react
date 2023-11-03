@@ -1,0 +1,47 @@
+.container-card-icon {
+    padding: 1rem;
+}
+
+.container-card-icon  div {
+
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 18rem;
+
+    @media screen and (max-width: 500px) {
+        width: 8rem;
+    }
+}
+
+.cards-icon div {
+    text-align: center;
+}
+
+.cards-icon span svg {
+    font-size: 2rem;
+    color: var(--contrastColorMain);
+    @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+    }
+}
+
+.cards-icon h4 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--contrastColorMain);
+
+    @media screen and (max-width: 500px) {
+        font-size: 10px;
+    }
+}
+
+.cards-icon p {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--contrastColorSecondary);
+
+    
+    @media screen and (max-width: 500px) {
+        font-size: 9px;
+    }
+}
